@@ -39,7 +39,6 @@ a {
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
-  /* border: salmon solid 2px; */
 }
 #heading {
   font-size: 80px;
@@ -47,13 +46,11 @@ a {
   width: 40%;
   height: 30%;
   color: white;
-  /* border: red solid 2px; */
 }
 input {
   border: none;
   height: 42px;
   width: 448.8px;
-  /* border: red solid 4px; */
 }
 #input {
   height: 44px;
@@ -63,21 +60,18 @@ input {
   justify-content: center;
   align-items: center;
   background-color: white;
-  /* border: red solid 4px; */
 }
 #search-logo {
   width: 17px;
   height: 17px;
   border-radius: 30px;
   padding-right: 10px;
-  /* border: orange solid 2px; */
 }
 #voice-logo {
   width: 17px;
   height: 17px;
   border-radius: 30px;
   padding-left: 10px;
-  /* border: orange solid 2px; */
 }
 #add {
   margin-top: 20px;
@@ -117,7 +111,6 @@ input {
   display: flex;
   border-radius: 30px;
   align-items: center;
-  /* border: hotpink solid 2px; */
 }
 .link {
   width: 220px;
@@ -126,5 +119,129 @@ input {
   border-radius: 15px;
   display: flex;
   align-items: center;
-  /* border: hotpink solid 2px; */
+}
+/* ------------Media Queries------------ */
+@media(max-width:600px){
+  nav{
+    display: flex;
+    justify-content: center;
+
+  }
+  #heading{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    width: auto;
+    height: auto;
+    color: white;
+  }
+  #add{
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    border: none;
+    height: 32px;
+    width: auto;
+  }
+  #input{
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  #bottom{
+    margin: 0%;
+  }
+  #bottom:nth-child(1){
+    flex-grow: 1;
+  }
+  #bottom:nth-child(2){
+    flex-grow: 1;
+  }
+}
+@media(max-width:200px){
+  #heading{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 40px;
+    font-family: "Times New Roman", Times, serif;
+    width: auto;
+    height: auto;
+    color: white;
+  }
+  input {
+    border: none;
+    height: 22px;
+    width: 100px;
+  }
+  #input{
+    width: 150px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  #navbar-items {
+    height: 130px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #bottom{
+    /* margin-top: 80px; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  }
+  .link {
+    width: 100px;
+    color: white;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width:100px){
+  input {
+    border: none;
+    height: 22px;
+    width: 40px;
+  }
+  #input{
+    width: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+}
+@media(max-width:50px){
+  input {
+    border: none;
+    height: 12px;
+    width: 20px;
+  }
+  #input{
+    width: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
 }
